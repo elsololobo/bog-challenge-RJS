@@ -1,0 +1,50 @@
+.transactions-view {
+    height: 100vh;
+    margin-bottom: 30px;
+}
+
+.transactions-wrapper {
+    background-color: white;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.filtered-transactions-count {
+    font-size: 26px;
+    color: rgb(69, 97, 126);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.total-amount {
+    height: 75px;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    color: #ffffff;
+    background-color: #a1c4ff;
+    justify-content: flex-end;
+    font-size: 26px;
+}
+
+.total-amount span {
+    font-size: 14px;
+    margin: 7px 0 0 7px;
+}

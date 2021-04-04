@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Header from './components/header/header'
+import Home from './pages/home/home'
+import Footer from './components/footer/footer'
+import Toaster from './components/toaster/toaster'
+import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={'main-wrapper'}>
+      <Header />
+      <Home />
+      <Footer />
+      <Toaster />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

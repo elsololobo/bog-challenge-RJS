@@ -1,0 +1,15 @@
+.header-wrapper {
+    width: 100%;
+    background-color: #ffffff;
+    height: 60px;
+    margin-bottom: 30px;
+}
+.header {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.header-wrapper .container {
+    height: 60px;
+}

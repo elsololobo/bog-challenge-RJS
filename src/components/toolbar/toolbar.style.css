@@ -1,0 +1,86 @@
+.toolbar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    height: 85px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.add-transaction {
+    cursor: pointer;
+    color: #a1c4ff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-right: 1px rgb(184, 184, 184) solid;
+    padding-right: 30px;
+    white-space: nowrap;
+}
+
+.add-transaction-icon {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #a1c4ff;
+    border-radius: 35px;
+    display: inline-block;
+    font-size: 35px;
+    line-height: 32px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.filter-transaction {
+    display: flex;
+    align-items: center;
+}
+
+.filter-input-wrapper {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-left: 1px rgb(184, 184, 184) solid;
+    padding: 0 10px;
+}
+
+.filter-input {
+    background: white none;
+    color: rgb(184, 184, 184);
+    display: block;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.submit-filter-wrapper {
+    margin-left: 20px;
+}
+
+.submit-filter {
+    background-color: #a7bedb;
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 130px;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .toolbar {
+        flex-direction: column;
+        height: 140px !important;
+        justify-content: center !important;
+    }
+
+    .add-transaction, .filter-input-wrapper {
+        border: none !important;
+    }
+
+
+}

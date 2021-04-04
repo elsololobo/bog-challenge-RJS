@@ -1,0 +1,81 @@
+
+.transaction {
+    border-bottom: 1px solid rgb(184, 184, 184);
+    padding: 20px;
+    overflow: hidden;
+    height: 100px;
+    cursor: pointer;
+    transition: height 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.transaction-flex-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.left-content {
+    display: inline-block;
+}
+
+.transaction-title {
+    font-size: 18px;
+    color: rgb(69, 97, 126);
+    margin-bottom: 10px;
+}
+
+.transaction-category {
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #a1c4ff;
+    border: 1px solid #a1c4ff;
+    border-radius: 15px
+}
+
+.transaction-comment {
+    color: rgb(184, 184, 184);
+}
+
+
+.transaction-comment > div:first-child {
+    color: rgb(69, 97, 126);
+    margin-bottom: 10px;
+}
+
+.right-content {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction-date {
+    color: rgb(170, 170, 170);
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.transaction-amount {
+    font-size: 25px;
+    color: rgb(248, 87, 118);
+}
+
+.transaction-currency {
+    font-size: 10px;
+    color: rgb(248, 87, 118);
+    font-weight: bold;
+}
+
+.active {
+    background-color: #f3f4f8;
+    height: 200px;
+}
+
+.green-text {
+    color: forestgreen !important;
+}
+@media only screen and (max-width: 600px) {
+    .active {
+        height: 230px !important;
+    }
+}
