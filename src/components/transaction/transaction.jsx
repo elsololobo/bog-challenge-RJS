@@ -24,7 +24,7 @@ const Transaction = ({
         </div>
         <div className={'right-content'}>
           <div className={'transaction-date'}>
-            On&nbsp;{moment(date).format('dddd, MMMM YYYY')}
+            On&nbsp;{moment.unix(date).format('dddd, MMMM YYYY')}
           </div>
           <div
             className={`transaction-amount ${amount > 0 ? 'green-text' : ''}`}

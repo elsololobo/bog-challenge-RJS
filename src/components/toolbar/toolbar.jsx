@@ -7,11 +7,13 @@ import { DebounceInput } from 'react-debounce-input'
 import { addPayment, setFilter } from '../../redux/slices/payment.slice'
 import { addTransaction } from '../../api/transactions.api'
 import BurntToast from '../toaster/burnt-toast'
+import moment from 'moment'
 
 const Toolbar = ({ dispatch }) => {
   const addPaymentModal = useRef(null)
 
   const handleAddPayment = (params) => {
+    params.date = moment(params.date).unix()
     addTransaction(params).then(
       (res) => {
         dispatch(addPayment(res))
