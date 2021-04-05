@@ -1,5 +1,6 @@
 import React from 'react'
 import './transaction.style.css'
+import moment from 'moment'
 
 const Transaction = ({
   id,
@@ -22,7 +23,9 @@ const Transaction = ({
           <div className={'transaction-category'}>{category}</div>
         </div>
         <div className={'right-content'}>
-          <div className={'transaction-date'}>{date}</div>
+          <div className={'transaction-date'}>
+            On&nbsp;{moment(date).format('dddd, MMMM YYYY')}
+          </div>
           <div
             className={`transaction-amount ${amount > 0 ? 'green-text' : ''}`}
           >

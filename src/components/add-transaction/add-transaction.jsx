@@ -32,7 +32,7 @@ const AddTransaction = ({ handleAddPayment }) => {
           label={'Title:'}
           value={title}
           onChange={(e) => handleChange(e)}
-          maxLength={80}
+          maxLength={50}
         />
         <FormInput
           type={'number'}

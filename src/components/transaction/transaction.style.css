@@ -74,8 +74,13 @@
 .green-text {
     color: forestgreen !important;
 }
+
 @media only screen and (max-width: 600px) {
     .active {
         height: 230px !important;
+    }
+
+    .transaction-title {
+        font-size: 12px;
     }
 }

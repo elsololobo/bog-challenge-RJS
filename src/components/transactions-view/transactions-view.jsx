@@ -40,7 +40,7 @@ const TransactionsView = ({
         )}
         {loading && <Loader />}
       </div>
-      {totalAmount > 0 && filter && (
+      {filter && transactions?.length > 0 && (
         <div className={'total-amount'}>
           Total: {totalAmount.toFixed(2)}
           <span>GEL</span>
