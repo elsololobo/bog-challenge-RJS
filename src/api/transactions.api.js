@@ -4,7 +4,7 @@ const baseUrl = 'https://6069981de1c2a10017544b18.mockapi.io/transactions'
 
 export function fetchTransactions(page = 1) {
   return jsonRequest(
-    `${baseUrl}?sortBy=createdAt&order=desc&p=${page}&l=10`,
+    `${baseUrl}?sortBy=createdAt&order=asc&p=${page}&l=10`,
     null,
     'GET'
   )
